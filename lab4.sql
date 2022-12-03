@@ -96,7 +96,7 @@ select O.*, P.PRO_NAME FROM `order` O, product P, supplier_pricing S
 inner join product as p on p.PRO_ID=sp.PRO_ID group by s.SUPP_NAME having count(p.PRO_NAME)>1;
 
 /*Query for question 6*/
-select p.PRO_NAME, min(sp.SUPP_PRICE), sp.SUPP_ID from product as p inner join supplier_pricing as sp on p.PRO_ID=sp.PRO_ID
+select p.PRO_NAME,c.CAT_ID, min(sp.SUPP_PRICE), sp.SUPP_ID from category c,product as p inner join supplier_pricing as sp on p.PRO_ID=sp.PRO_ID
 group by p.PRO_ID;
 
 /*Query for question 7*/
