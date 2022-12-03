@@ -45,7 +45,7 @@ insert into supplier(SUPP_ID, SUPP_NAME, SUPP_CITY, SUPP_PHONE) values (1, 'Raje
  insert into supplier_pricing(PRICING_ID, PRO_ID, SUPP_ID, SUPP_PRICE) values(4,2,3,2500);
  insert into supplier_pricing(PRICING_ID, PRO_ID, SUPP_ID, SUPP_PRICE) values(5,4,1,1000);
  
- SET FOREIGN_KEY_CHECKS=1;
+ 
  
  insert into `order`(ORD_ID, ORD_AMOUNT, ORD_DATE, CUS_ID, PRICING_ID) values(101,1500,'2021-10-06',2,1);
  insert into `order`(ORD_ID, ORD_AMOUNT, ORD_DATE, CUS_ID, PRICING_ID) values(102,1000,'2021-10-12',3,5);
@@ -64,7 +64,7 @@ insert into supplier(SUPP_ID, SUPP_NAME, SUPP_CITY, SUPP_PHONE) values (1, 'Raje
  insert into `order`(ORD_ID, ORD_AMOUNT, ORD_DATE, CUS_ID, PRICING_ID) values(115,3000,'2021-09-16',5,3);
  insert into `order`(ORD_ID, ORD_AMOUNT, ORD_DATE, CUS_ID, PRICING_ID) values(116,99,'2021-09-17',2,14);
  
- SET FOREIGN_KEY_CHECKS=0;
+
 insert into rating(RAT_ID, ORD_ID, RAT_RATSTARS) values(1,101,4);
 insert into rating(RAT_ID, ORD_ID, RAT_RATSTARS) values(2,102,3);
 insert into rating(RAT_ID, ORD_ID, RAT_RATSTARS) values(3,103,1);
